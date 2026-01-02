@@ -2,7 +2,7 @@
 
 A simple and efficient URL shortening service built with FastAPI. This service provides a clean REST API for creating shortened URLs and redirecting to original destinations.
 
-## 🚀 Features
+## Features
 
 - **Fast & Async**: Built with FastAPI and fully asynchronous operations
 - **Clean Architecture**: Layered design with separation of concerns (API → Service → Storage)
@@ -12,12 +12,12 @@ A simple and efficient URL shortening service built with FastAPI. This service p
 - **Production-Ready**: Proper error handling, logging, and extensibility
 - **Interactive Docs**: Auto-generated Swagger UI and ReDoc documentation
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.12 or higher
 - pip (Python package manager)
 
-## 🛠️ Installation
+##  Installation
 
 1. **Clone the repository** (or download the source code):
 ```bash
@@ -47,7 +47,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 🏃 Running the Service
+##  Running the Service
 
 Start the development server:
 ```bash
@@ -122,7 +122,7 @@ curl -L "http://localhost:8000/abc123"
 }
 ```
 
-## 🧪 Running Tests
+##  Running Tests
 
 Run the comprehensive test suite:
 ```bash
@@ -143,7 +143,7 @@ The test suite includes:
 - ✅ Concurrent request handling
 - ✅ Various URL format validation
 
-## 🏗️ Architecture
+##  Architecture
 
 The service follows a clean, layered architecture:
 
@@ -180,7 +180,7 @@ The service generates short IDs using:
 - **6-character IDs** by default (56.8 billion possible combinations)
 - **Collision detection** with automatic retry logic
 
-## 🔧 Configuration
+##  Configuration
 
 ### Changing Short ID Length
 
@@ -201,7 +201,7 @@ storage = RedisURLStorage(redis_url="redis://localhost:6379")
 url_service = URLShortenerService(storage)
 ```
 
-## 🚀 Production Considerations
+##  Production Considerations
 
 For production deployment, consider:
 
@@ -214,7 +214,7 @@ For production deployment, consider:
 7. **HTTPS**: Deploy behind a reverse proxy with SSL/TLS
 8. **Monitoring**: Add logging, metrics, and health checks
 
-## 📝 Error Handling
+##  Error Handling
 
 The API returns appropriate HTTP status codes:
 
@@ -231,15 +231,15 @@ All errors return a consistent JSON format:
 }
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 👨‍💻 Author
+##  Author
 
 Created as a technical assessment for Python/FastAPI development skills.
 
